@@ -54,7 +54,7 @@ params = {
 
     'line_width': 2,
     
-    'filename': 'fig_test',
+    'fig_name': 'fig_test',
     'fig_svg': 'svg',
     'fig_png': 'png',
     'fig_jpeg': 'jpeg',
@@ -115,10 +115,10 @@ plt.grid(True)
 # show or save figure
 # -----------------------------------------
 # plt.show()
-plt.savefig(params['filename'] + '.' + params['fig_png'], format=params['fig_png'], transparent= params['fig_transparent'])
+plt.savefig(params['fig_name'] + '.' + params['fig_png'], format=params['fig_png'], transparent= params['fig_transparent'])
 
 # note, if you want to get a pdf file, it is recommended to convert svg to pdf
-# plt.savefig(params['filename'] + '.' + params['fig_svg'], format=params['fig_svg'], transparent= params['fig_transparent'])
-# cairosvg.svg2pdf(url=params['filename'] + '.' + params['fig_svg'], write_to=params['filename'] + '.' + params['fig_pdf'])
-# os.remove(params['filename'] + '.' + params['fig_svg'])
+# plt.savefig(params['fig_name'] + '.' + params['fig_svg'], format=params['fig_svg'], transparent= params['fig_transparent'])
+# cairosvg.svg2pdf(url=params['fig_name'] + '.' + params['fig_svg'], write_to=params['fig_name'] + '.' + params['fig_pdf'])
+# os.remove(params['fig_name'] + '.' + params['fig_svg'])
 
